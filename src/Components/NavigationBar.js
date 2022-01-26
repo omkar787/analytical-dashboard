@@ -5,6 +5,8 @@ function NavigationBar() {
                 <div>
                     Logo
                 </div>
+            </div>
+            <div>
 
             </div>
 
