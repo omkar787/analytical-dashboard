@@ -4,7 +4,7 @@ import RightPanel from "./RightPanel";
 
 export default function MainBody() {
 	return (
-		<div className="flex h-full">
+		<div className="flex justify-start ">
 			<LeftPanel />
 			<RightPanel />
 		</div>

@@ -5,7 +5,7 @@ import Options from "./Options";
 
 export default function LeftPanel() {
 	return (
-		<div className="w-fit  border-r border-gray-300 h-full bg-white shadow-sm shadow-gray-300 overflow-y-auto">
+		<div className="w-[25%]  border-r border-gray-300 h-full bg-white shadow-sm shadow-gray-300 overflow-y-auto">
 			{/* Profile div */}
 			<div className="flex items-center flex-col pt-3 text-sm px-5 pb-5 border-b border-gray-300">
 				{/* Profile picture */}
@@ -22,7 +22,7 @@ export default function LeftPanel() {
 			</div>
 
 			{/* Options div */}
-			<div className="pr-5">
+			<div className="">
 				{leftPanel.map((ele) => {
 					return <Options label={ele.name} data={ele.data} />;
 				})}
