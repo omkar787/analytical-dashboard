@@ -1,11 +1,14 @@
-import NavigationBar from './Components/NavigationBar'
+import MainBody from "./Components/MainBody";
+import NavigationBar from "./Components/NavigationBar";
 
 function App() {
-  return (
-    <div className="App">
-      <NavigationBar />
-    </div>
-  );
+	document.title = "Dashboard";
+	return (
+		<div className="App">
+			<NavigationBar />
+			<MainBody />
+		</div>
+	);
 }
 
 export default App;
