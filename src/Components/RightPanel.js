@@ -8,6 +8,57 @@ export default function RightPanel() {
 	return (
 		<div className="px-3 pt-5 w-full">
 			{/* Top headings */}
+			<TopPart />
+
+			{/* Charts */}
+			<ChartsPart />
+
+			{/* Bottom blocks */}
+			<div></div>
+		</div>
+	);
+}
+
+
+function ChartsPart() {
+	return (
+		<div className="flex">
+			{/* Active users Chart */}
+			<div className="bg-white p-6 w-full border shadow-md rounded-md border-gray-200 ">
+
+				<div className="flex justify-between">
+					<div>
+						<div>
+							Active Users
+
+						</div>
+						<div>
+							Page views per second
+						</div>
+					</div>
+					<div>
+						109
+					</div>
+				</div>
+
+				{/* Chart will go here */}
+				<div></div>
+
+
+				<div></div>
+				<div></div>
+			</div>
+			{/* Performance Over time */}
+			<div className="bg-white p-6 w-full border shadow-md rounded-md border-gray-200 ">
+
+			</div>
+		</div>
+	)
+}
+
+function TopPart() {
+	return (
+		<div>
 			<div className="flex justify-between">
 				{/* First part of heading */}
 				<div>
@@ -94,12 +145,5 @@ export default function RightPanel() {
 					</div>
 				</div>
 			</div>
-
-			{/* Charts */}
-			<div></div>
-
-			{/* Bottom blocks */}
-			<div></div>
-		</div>
-	);
+		</div>);
 }
