@@ -25,18 +25,22 @@ const leftPanel = [
 		data: [
 			{
 				name: "Customers",
+				data: ["List Customers", "View Customers", "Edit Customers"],
 				icon: <MdOutlinePeopleOutline />,
 			},
 			{
 				name: "Products",
+				data: ["temp1", "temp2"],
 				icon: <FiShoppingCart />,
 			},
 			{
 				name: "Orders",
+				data: ["temp1", "temp2"],
 				icon: <AiOutlineFolder />,
 			},
 			{
 				name: "Invoices",
+				data: ["temp1", "temp2"],
 				icon: <MdOutlineReceipt />,
 			},
 		],
@@ -46,10 +50,12 @@ const leftPanel = [
 		data: [
 			{
 				name: "Project Platform",
+				data: ["temp1", "temp2"],
 				icon: <RiLuggageDepositLine />,
 			},
 			{
 				name: "Social Platform",
+				data: ["temp1", "temp2"],
 				icon: <BiShareAlt />,
 			},
 		],

@@ -29,7 +29,7 @@ function NavigationBar() {
 					<div className="bg-gray-400 p-1 rounded-full">
 						<MdPerson size={"1.2rem"} />
 					</div>
-					<div>demo@mail.com</div>
+					<div>demo@devias.com</div>
 				</div>
 			</div>
 		</div>

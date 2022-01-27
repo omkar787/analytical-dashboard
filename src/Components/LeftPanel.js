@@ -14,15 +14,15 @@ export default function LeftPanel() {
 						<MdPerson size={"3rem"} color="#fff" />
 					</div>
 				</div>
-				<div className="font-semibold">demo@mail.com</div>
-				<div>
+				<div className="font-semibold  text-lg">demo@devias.com</div>
+				<div className="">
 					Your tier:{" "}
 					<span className="text-violet text-xs">Premium</span>
 				</div>
 			</div>
 
 			{/* Options div */}
-			<div className="">
+			<div className="w-full h-full max-h-screen overflow-y-auto">
 				{leftPanel.map((ele) => {
 					return <Options label={ele.name} data={ele.data} />;
 				})}

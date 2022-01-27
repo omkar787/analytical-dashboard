@@ -88,7 +88,7 @@ function ChartsPart() {
 							maintainAspectRatio: false,
 							plugins: {
 								legend: {
-									display: "none",
+									display: false,
 								},
 								title: {
 									display: false,
@@ -149,6 +149,15 @@ function ChartsPart() {
 					<Line
 						options={{
 							responsive: true,
+							
+							plugins: {
+								legend: {
+									display: false,
+								},
+								title: {
+									display: false,
+								},
+							},
 							scales: {
 								y: {
 									gridLines: { display: false },
@@ -186,8 +195,6 @@ function ChartsPart() {
 									borderWidth: 3,
 									fill: false,
 									borderColor: "#5750ee",
-									// borderRadius: 50,
-									// borderDash: 0,
 									pointRadius: 2,
 									lineTension: 0.5,
 								},
