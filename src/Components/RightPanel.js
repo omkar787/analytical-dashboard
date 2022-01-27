@@ -13,6 +13,8 @@ import {
 	Title,
 	Tooltip,
 	Legend,
+	PointElement,
+	LineElement,
 } from "chart.js";
 
 ChartJS.register(
@@ -21,7 +23,9 @@ ChartJS.register(
 	BarElement,
 	Title,
 	Tooltip,
-	Legend
+	Legend,
+	PointElement,
+	LineElement
 );
 export default function RightPanel() {
 	return (
@@ -84,7 +88,6 @@ function ChartsPart() {
 							maintainAspectRatio: false,
 							plugins: {
 								legend: {
-									position: "top",
 									display: "none",
 								},
 								title: {
@@ -92,14 +95,12 @@ function ChartsPart() {
 								},
 							},
 							scales: {
-								yAxis: [
-									{
-										ticks: {
-											// The y-axis value will start from zero
-											beginAtZero: true,
-										},
+								y: {
+									display: false,
+									gridLines: {
+										display: false,
 									},
-								],
+								},
 							},
 						}}
 						data={data}
@@ -144,7 +145,56 @@ function ChartsPart() {
 				</div>
 
 				{/* Line graph will go here */}
-				<div></div>
+				<div className="px-6">
+					<Line
+						options={{
+							responsive: true,
+							scales: {
+								y: {
+									gridLines: { display: false },
+								},
+								x: {
+									gridLines: {
+										display: false,
+									},
+								},
+							},
+						}}
+						data={{
+							backgroundColor: "#5750ee",
+							labels: [
+								"Jan",
+								"Feb",
+								"Mar",
+								"Apr",
+								"May",
+								"Jun",
+								"Jul",
+								"Aug",
+								"Sep",
+								"Aug",
+								"Nov",
+								"Dec",
+							],
+							datasets: [
+								{
+									label: "",
+									data: [
+										10000, 5000, 10200, 20000, 13000, 27000,
+										17000, 5000, 13000, 12000, 14000, 5000,
+									],
+									borderWidth: 3,
+									fill: false,
+									borderColor: "#5750ee",
+									// borderRadius: 50,
+									// borderDash: 0,
+									pointRadius: 2,
+									lineTension: 0.5,
+								},
+							],
+						}}
+					/>
+				</div>
 			</div>
 		</div>
 	);

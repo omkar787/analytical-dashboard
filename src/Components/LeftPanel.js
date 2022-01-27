@@ -7,11 +7,11 @@ export default function LeftPanel() {
 	return (
 		<div className="w-[25%]  border-r border-gray-300 h-full bg-white shadow-sm shadow-gray-300 overflow-y-auto">
 			{/* Profile div */}
-			<div className="flex items-center flex-col pt-3 text-sm px-5 pb-5 border-b border-gray-300">
+			<div className="flex h-full items-center flex-col pt-3 text-sm px-5 pb-5 border-b border-gray-300">
 				{/* Profile picture */}
 				<div className="flex">
 					<div className="bg-gray-400 p-1 rounded-full">
-						<MdPerson size={"2rem"} color="#fff" />
+						<MdPerson size={"3rem"} color="#fff" />
 					</div>
 				</div>
 				<div className="font-semibold">demo@mail.com</div>
